@@ -1,13 +1,12 @@
 package calculator;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
+public class TestCalculator {
 
-class TestCalculator 
-{
-	private Calculator calculator = new Calculator();
+	Calculator calculator = new Calculator();
 
 	@Test
 	public void testFindMax()
@@ -49,19 +48,19 @@ class TestCalculator
 	@Test
 	public void testCube()
 	{
-		assertEquals(8, calculator.square(2));
+		assertEquals(8, calculator.cube(2));
 	}
 	
 	@Test
 	public void testSecondCube()
 	{
-		assertEquals(27, calculator.square(3));
+		assertEquals(27, calculator.cube(3));
 	}
 	
 	@Test
 	public void testThirdCube()
 	{
-		assertEquals(64, calculator.square(4));
+		assertEquals(64, calculator.cube(4));
 	}
 	
 	@Test
@@ -69,5 +68,4 @@ class TestCalculator
 	{
 		assertNotNull(calculator);
 	}
-
 }
